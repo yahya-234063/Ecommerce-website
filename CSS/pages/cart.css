@@ -1,0 +1,138 @@
+header {
+  background-color: #212529;
+  color: var(--white);
+  padding-block: 0.6rem;
+  & .fa-solid {
+    color: var(--white);
+  }
+  & .sign-in:hover,
+  & .register:hover {
+    border: 1px solid rgb(152, 154, 189);
+    padding: 0.5rem 1.1rem 0.5rem 0.7rem;
+  }
+  & .cart:hover {
+    padding: 0.5rem 1.1rem 0.5rem 0.7rem;
+    border: 1px solid rgb(152, 154, 189);
+  }
+  & .logo:hover {
+    scale: 0.95;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%; /* يجعل html و body يغطيان كامل الشاشة */
+  /* overflow: hidden; يمنع السكروول */
+}
+
+.full-height {
+  height: 100vh; /* يغطي كامل ارتفاع الشاشة */
+}
+/* إعادة ضبط القيم الافتراضية */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%; /* يجعل الصفحة تأخذ كامل الارتفاع */
+}
+
+.full-height {
+  display: flex;
+  flex-direction: column; /* ترتيب العناصر عموديًا */
+  height: 100vh; /* جعل العنصر يغطي كامل الشاشة */
+}
+
+main {
+  display: flex;
+  flex: 1; /* يملأ المساحة المتبقية بين الهيدر والفوتر */
+  align-items: center;
+  justify-content: center;
+}
+section.cart article.flex {
+  border-top: 2px solid var(--blue-buttom);
+  background-color: #fff;
+  margin-top: 1.8rem;
+  justify-content: space-between;
+  min-width: 400px;
+  /* width: 700px; */
+  margin-inline: auto;
+  border-radius: 4px;
+  font-weight: 500px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px,
+    rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+  & .fa-trash-can {
+    color: #e41d43;
+    margin-left: 1rem;
+  }
+  & button.decrease {
+    color: var(--blue-buttom);
+    font-size: 1.9rem;
+  }
+  & .quantity {
+    background-color: var(--blue-buttom);
+    color: var(--white);
+    font-size: 0.8rem;
+    height: 21px;
+    width: 21px;
+    border-radius: 50%;
+    justify-content: center;
+    margin-inline: 0.4rem;
+  }
+  & button.increase {
+    color: var(--blue-buttom);
+    font-size: 1.9rem;
+  }
+}
+section.summary {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px,
+    rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+  width: 233px;
+  margin-top: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  & h1 {
+    font-size: 1.2rem;
+    padding-block: 0.5rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+  }
+  & div.flex {
+    padding-inline: 0.5rem;
+    margin-block: 0.6rem;
+    justify-content: space-between;
+  }
+  & button.cheackout {
+    background-color: var(--blue-buttom);
+    color: var(--white);
+    padding-block: 0.6rem;
+    font-size: 0.9rem;
+    font-weight: 500px;
+    border-radius: 4px;
+    width: 100%;
+  }
+  & a {
+    padding-block: 0.5rem;
+    color: #e41d43;
+    font-size: 0.9rem;
+  }
+}
+
+button.clear {
+  background-color: #e41d43;
+  color: var(--white);
+  margin-top: 1rem;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 0.8rem;
+}

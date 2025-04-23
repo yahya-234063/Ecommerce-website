@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../CSS/pages/Header.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
+    <link rel="stylesheet" href="../CSS/pages/index.css" />
+    <link rel="stylesheet" href="../CSS/pages/master.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .fa-solid {
+        color: #f6f6f6;
+        background-color: #2b3445;
+      }
+      a.register,
+      a.sign-in,
+      a.cart {
+        background-color: #2b3445;
+        color: #f6f6f6;
+        list-style: none;
+        text-decoration: none;
+      }
+      i {
+        color: #fff;
+      }
+      p {
+        color: white;
+      }
+      span {
+        color: #f6f6f6;
+      }
+      main {
+        max-width: 42rem;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/css/bootstrap.min.css" />
+    <link
+      href="/docs/5.0/dist/css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+
+  <body
+    style="
+      height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      align-items: center;
+    "
+    class="text-center text-white bg-dark"
+  >
+    <header class="flex">
+      <a href="../index1.html" class="logo">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span style="font-weight: bold">AWU</span>
+        <p style="letter-spacing: 0.5px">Shopping</p>
+      </a>
+
+      <div class="links">
+        <a style="position: relative" class="cart" href="">
+          <i class="fa-solid fa-cart-shopping"></i>
+          $0.00
+          <span class="products-number">2</span>
+        </a>
+        <a class="sign-in" href="../page/sign-in.html">
+          <i class="fa-solid fa-right-to-bracket"></i>
+          Sign in
+        </a>
+        <a class="register" href="../page/register.html">
+          <i class="fa-solid fa-user-plus"></i>
+          Register
+        </a>
+      </div>
+    </header>
+
+    <main class="px-3">
+      <form style="text-align: left">
+        <fieldset>
+          <legend>Disabled fieldset example</legend>
+          <div class="mb-3">
+            <label for="username" class="form-label">User name</label>
+            <input
+              type="text"
+              id="disabledTextInput"
+              class="form-control"
+              placeholder="Yahya Albezem"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="disabledTextInput" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="text"
+              id="disabledTextInput"
+              class="form-control"
+              placeholder="albzmy41@gmail.com"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="disabledSelect" class="form-label">password</label>
+            <select id="disabledSelect" class="form-select">
+              <option></option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="disabledFieldsetCheck"
+              />
+              <label class="form-check-label" for="disabledFieldsetCheck">
+                Can't check this
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Creat account</button>
+        </fieldset>
+      </form>
+    </main>
+    <footer class="lead">
+      Designed and develoed by
+      <span>Yahya Albezem</span>
+      @ 2024
+    </footer>
+  </body>
+</html>
